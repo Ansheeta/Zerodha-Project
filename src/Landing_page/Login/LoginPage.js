@@ -18,7 +18,7 @@ function LoginPage() {
     e.preventDefault();
 
     try {
-      await axios.post(`${process.env.REACT_APP_BACKEND_URL}/login`, formData);
+      await axios.post("https://zerodha-project-2-mlpm.onrender.com/login", formData);
       window.location.href = `${process.env.REACT_APP_DASHBOARD_URL}`;
     } catch (err) {
       alert(err.response?.data?.message || "Login failed");

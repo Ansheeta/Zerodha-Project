@@ -22,10 +22,10 @@ function Signup() {
     e.preventDefault();
 
     try {
-      const res = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/signup`, formData);
+      const res = await axios.post("https://zerodha-project-2-mlpm.onrender.com/signup", formData);
 
       // ✅ Directly redirect without showing success message
-      navigate(`${process.env.REACT_APP_DASHBOARD_URL}`); // React Router redirect
+      navigate("https://dashboard.d2kftmpzjw73xw.amplifyapp.com/"); // React Router redirect
 
     } catch (err) {
       // Only show error if signup fails

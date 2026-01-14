@@ -19,7 +19,7 @@ function LoginPage() {
 
     try {
       await axios.post("https://zerodha-project-2-mlpm.onrender.com/login", formData);
-      window.location.href = `${process.env.REACT_APP_DASHBOARD_URL}`;
+     window.location.href = "https://dashboard.d2kftmpzjw73xw.amplifyapp.com/";;
     } catch (err) {
       alert(err.response?.data?.message || "Login failed");
     }

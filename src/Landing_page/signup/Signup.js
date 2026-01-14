@@ -25,7 +25,7 @@ function Signup() {
       const res = await axios.post("https://zerodha-project-2-mlpm.onrender.com/signup", formData);
 
       // ✅ Directly redirect without showing success message
-      navigate("https://dashboard.d2kftmpzjw73xw.amplifyapp.com/"); // React Router redirect
+        window.location.href = "https://dashboard.d2kftmpzjw73xw.amplifyapp.com/"; // React Router redirect
 
     } catch (err) {
       // Only show error if signup fails

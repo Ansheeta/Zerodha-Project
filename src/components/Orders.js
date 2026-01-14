@@ -6,7 +6,7 @@ function Orders() {
 
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_BACKEND_URL}/allOrders`)
+      .get("https://zerodha-project-2-mlpm.onrender.com/allOrders")
       .then((res) => {
         console.log(res.data);
         setAllOrders(res.data);
